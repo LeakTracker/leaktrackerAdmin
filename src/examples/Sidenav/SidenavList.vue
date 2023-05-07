@@ -39,6 +39,17 @@
           </template>
         </sidenav-item>
       </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/maps"
+          :class="getRoute() === 'maps' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'الجداول' : 'Maps'"
+        >
+          <template v-slot:icon>
+            <i class="fa fa-map-marker text-dark text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
       <!-- <li class="nav-item">
         <sidenav-item
           url="/settings"

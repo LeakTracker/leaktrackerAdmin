@@ -10,6 +10,7 @@ import Signin from "../views/Signin.vue";
 import Reports from "../views/Reports.vue";
 import ReportsInfo from "../views/ReportsInfo.vue";
 import Accounts from "../views/Accounts.vue";
+import Maps from "../views/Maps.vue";
 import Settings from "../views/Settings.vue";
 import { auth } from "../firebase";
 
@@ -51,6 +52,14 @@ const routes = [
     path: "/accounts",
     name: "Accounts",
     component: Accounts,
+    meta: {
+      requiresAuth: true,
+    }
+  },
+  {
+    path: "/maps",
+    name: "Maps",
+    component: Maps,
     meta: {
       requiresAuth: true,
     }

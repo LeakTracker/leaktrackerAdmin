@@ -8,6 +8,7 @@ import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
 import Reports from "../views/Reports.vue";
+import ReportsInfo from "../views/ReportsInfo.vue";
 import Accounts from "../views/Accounts.vue";
 import Settings from "../views/Settings.vue";
 import { auth } from "../firebase";
@@ -34,6 +35,14 @@ const routes = [
     path: "/reports",
     name: "Reports",
     component: Reports,
+    meta: {
+      requiresAuth: true,
+    }
+  },
+  {
+    path: "/reports-info",
+    name: "Reports Info",
+    component: ReportsInfo,
     meta: {
       requiresAuth: true,
     }

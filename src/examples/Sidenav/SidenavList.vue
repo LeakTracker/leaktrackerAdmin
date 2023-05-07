@@ -39,7 +39,7 @@
           </template>
         </sidenav-item>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-item
           url="/settings"
           :class="getRoute() === 'settings' ? 'active' : ''"
@@ -49,7 +49,7 @@
             <i class="ni ni-settings-gear-65 text-dark text-sm opacity-10"></i>
           </template>
         </sidenav-item>
-      </li>
+      </li> -->
       <!-- <li>
        <sidenav-item>
           <button type="button" class="btn btn-danger">Danger</button>
